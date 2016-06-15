@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"></FrameLayout>
+    <RadioGroup
+            android:id="@+id/rg_navigation"
+            android:background="#5c5c42"
+            android:orientation="horizontal" android:gravity="center"
+            android:layout_width="match_parent" android:layout_height="65dp">
+        <RadioButton
+                android:checked="true" android:id="@+id/re_weixin"
+                style="@style/dibumenu" android:drawableTop="@drawable/menu1"
+                android:layout_weight="1" android:text="微信"
+                android:layout_width="wrap_content" />
+        <RadioButton
+                android:id="@+id/re_tongxunlu"
+                style="@style/dibumenu" android:drawableTop="@drawable/menu2"
+                android:layout_weight="1" android:text="通讯录"
+                android:layout_width="wrap_content" />
+        <RadioButton
+                android:id="@+id/re_faxian"
+                style="@style/dibumenu" android:drawableTop="@drawable/menu3"
+                android:layout_weight="1" android:text="发现"
+                android:layout_width="wrap_content" />
+        <RadioButton
+                android:id="@+id/re_wo"
+                style="@style/dibumenu" android:drawableTop="@drawable/menu4"
+                android:layout_weight="1" android:text="我"
+                android:layout_width="wrap_content" />
+    </RadioGroup>
+</LinearLayout>

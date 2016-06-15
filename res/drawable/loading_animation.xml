@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/yuanxing1" android:duration="100"/>
+    <item android:drawable="@drawable/yuanxing2" android:duration="100"/>
+    <item android:drawable="@drawable/yuanxing3" android:duration="100"/>
+    <item android:drawable="@drawable/yuanxing4" android:duration="100"/>
+    <item android:drawable="@drawable/yuanxing5" android:duration="100"/>
+    <item android:drawable="@drawable/yuanxing6" android:duration="100"/>
+    <item android:drawable="@drawable/yuanxing7" android:duration="100"/>
+    <item android:drawable="@drawable/yuanxing8" android:duration="100"/>
+
+</animation-list>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.myapp6"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="18"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <permission android:name="com.my.order.receiver.permission" android:protectionLevel="normal"/>
+    <uses-permission android:name="com.my.order.receiver.permission"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+        <activity android:name="MyActivity"
+                  android:label="@string/app_name">
+
+        </activity>
+        <activity android:name="Main" android:label="@string/app_name">
+
+        </activity>
+        <activity android:name=".Login" android:label="@string/app_name">
+
+        </activity>
+        <activity android:name=".Welcom" android:label="@string/app_name">
+
+        </activity>
+        <activity android:name=".views.ProgressBarActivity"/>
+        <activity android:name=".NetworkActivity">
+
+        </activity>
+        <activity android:name=".activites.TestServiceActivity">
+
+        </activity>
+        <service android:name=".services.MyTestService" android:exported="false">
+
+        </service>
+        <!--下面是Receiver注册-->
+        <receiver android:name=".receiver.StaticReceiver1">
+            <intent-filter>
+                <action android:name="android.intent.action.My_Static_Action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.StaticReceiver2">
+            <intent-filter>
+                <action android:name="android.intent.action.My_Static_Action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.StaticReceiver3">
+            <intent-filter>
+                <action android:name="android.intent.action.My_Static_Action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.FirstReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.My_Static_Action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.SecondReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.My_Static_Action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.ThirdReceiver">
+            <intent-filter android:priority="998">
+                <action android:name="android.intent.action.My_Static_Action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activites.StaticActivity">
+
+        </activity>
+        <activity android:name=".activites.OrderActivity">
+
+        </activity>
+        <activity android:name=".activites.NotificationActivity">
+
+        </activity>
+        <activity android:name=".activites.Work4Activity">
+
+        </activity>
+        <activity android:name=".activites.PostActivity">
+
+        </activity>
+        <activity android:name=".activites.RequestActivity">
+
+        </activity>
+        <activity android:name=".activites.OkhttpAcitivity">
+
+        </activity>
+        <activity android:name=".activites.LoginActivity">
+
+        </activity>
+        <activity android:name=".activites.RegActivity"></activity>
+        <activity android:name=".activites.NotigivsyionActivity">
+
+        </activity>
+        <activity android:name=".activites.DwonloadActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name=".services.MyOrderService"></service>
+        <service android:name=".services.MyStatiService"></service>
+        <service android:name=".services.DownloadService"></service>
+    </application>
+</manifest>

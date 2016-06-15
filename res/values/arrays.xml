@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="myAraay">
+        <item>小明</item>
+        <item>小虫</item>
+        <item>小爱</item>
+    </array>
+</resources>
